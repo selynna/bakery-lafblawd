@@ -28,9 +28,9 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png">
 
-  <!-- JS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- JS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 
 </head>
 <body>
@@ -62,29 +62,40 @@
         </div>
     </section>
 
+    <section id="details">
+        <div class="section group">
+            <div class="col span_1_of_2">
+                This is column 1
+            </div>
+            <div class="col span_1_of_2">
+                This is column 2
+            </div>
+        </div>
+    </section>
+
     <!-- End Document
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script>
-		$(function() {
-			var pull 		= $('#pull');
-				menu 		= $('nav ul');
-				menuHeight	= menu.height();
+    <script>
+    $(function() {
+        var pull 	= $('#pull');
+        menu 		= $('nav ul');
+        menuHeight	= menu.height();
 
-			$(pull).on('click', function(e) {
-				e.preventDefault();
-				menu.slideToggle();
-			});
+        $(pull).on('click', function(e) {
+            e.preventDefault();
+            menu.slideToggle();
+        });
 
-			$(window).resize(function(){
-        		var w = $(window).width();
-        		if(w > 320 && menu.is(':hidden')) {
-        			menu.removeAttr('style');
-        		}
-    		});
-		});
-	</script>
+        $(window).resize(function(){
+            var w = $(window).width();
+            if(w > 320 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+            }
+        });
+    });
+    </script>
 </body>
 </html>

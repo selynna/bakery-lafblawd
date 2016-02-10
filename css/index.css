@@ -28,13 +28,13 @@ body {
 /* Basic Styles */
 
 nav {
-	height: 40px;
-	width: 90%;
+    height: 40px;
+    width: 90%;
     margin: 0 auto;
-	background: transparent;
-	font-family: 'Brandon Grotesque', Arial, sans-serif;
-	font-weight: bold;
-	position: relative;
+    background: transparent;
+    font-family: 'Brandon Grotesque', Arial, sans-serif;
+    font-weight: bold;
+    position: relative;
 }
 nav .logo {
     margin: 2rem auto 0 auto;
@@ -45,18 +45,18 @@ nav ul {
     float: right;
 }
 nav li {
-	display: inline;
-	float: left;
+    display: inline;
+    float: left;
 }
 nav a {
-	color: #fff;
-	display: inline-block;
+    color: #fff;
+    display: inline-block;
     margin-left: 3.5rem;
     font-size: 2rem;
     font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
 }
 nav li a:hover {
     border-bottom: #F4D9D9 solid 4px;
@@ -66,79 +66,57 @@ nav a:hover {
 }
 nav li a {
     font-size: 1.3rem;
-	box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
 }
 nav li:last-child a {
-	border-right: 0;
+    border-right: 0;
 }
 nav a#pull {
-	display: none;
+    display: none;
 }
 
 /*Styles for screen 600px and lower*/
-/* @media screen and (max-width: 600px) {
-	nav {
-  		height: auto;
-  	}
-  	nav ul {
-  		width: 100%;
-  		display: block;
-  		height: auto;
-  	}
-  	nav li {
-  		width: 50%;
-  		float: left;
-  		position: relative;
-  	}
-  	nav li a {
-		border-bottom: 1px solid #576979;
-		border-right: 1px solid #576979;
-	}
-  	nav a {
-	  	text-align: left;
-	  	width: 100%;
-	  	text-indent: 25px;
-  	}
-} */
+@media all and (max-width: 600px) {
+    b {
+        font-size: 2rem;
+    }
+}
 
 /*Styles for screen 515px and lower*/
 @media only screen and (max-width : 480px) {
-	nav {
-		border-bottom: 0;
-	}
-	nav ul {
-		display: none;
-		height: auto;
-	}
-	nav a#pull {
-		display: block;
-		width: 100%;
-		position: relative;
-	}
-	nav a#pull:after {
-		content:"";
-		background: url('nav-icon.png') no-repeat;
-		width: 30px;
-		height: 30px;
-		display: inline-block;
-		position: absolute;
-		right: 15px;
-		top: 10px;
-	}
+    nav {
+        border-bottom: 0;
+    }
+    nav ul {
+        display: none;
+        height: auto;
+    }
+    nav a#pull {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+    nav a#pull:after {
+        content:"";
+        background: url('nav-icon.png') no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
 }
 
 /*Smartphone*/
 @media only screen and (max-width : 320px) {
-	nav li {
-		display: block;
-		float: none;
-		width: 100%;
-	}
-	nav li a {
-		border-bottom: 1px solid #576979;
-	}
+    nav li {
+        display: block;
+        float: none;
+        width: 100%;
+    }
 }
 
 #hero {
@@ -158,13 +136,8 @@ nav a#pull {
     background-color: transparent;
 }
 
-h1 {
-    text-height: 60px;
-}
-
 .banner {
-    margin: 8rem auto 0 auto;
-    max-width: 768px;
+    margin: 15% auto 0 auto;
     width: 85%;
     text-align: center;
     color: white;
@@ -177,13 +150,57 @@ h1 {
 }
 
 .banner #banner-sub {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 200;
     margin: 0 auto;
+    color: white;
 }
 
 .button-group {
     margin: 3rem auto 0 auto;
     max-width: 768px;
     text-align: center;
+}
+
+/* Grid */
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col {
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
 }
