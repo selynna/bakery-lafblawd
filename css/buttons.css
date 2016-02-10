@@ -1,0 +1,33 @@
+.button-red {
+    border: none;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    color: white;
+    background-color: #E86565;
+    border-radius: 2rem;
+    margin: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.button-red:hover {
+    background-color: white;
+    color: #E86565;
+}
+
+.button-white {
+    border: none;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    color: #E86565;
+    background-color: white;
+    border-radius: 2rem;
+    margin: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.button-white:hover {
+    background-color: #E86565;
+    color: white;
+}

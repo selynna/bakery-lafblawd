@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('../fonts/Brandon_med.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('../fonts/Brandon_light.otf') format('opentype');
+    font-weight: 200; /* light */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('../fonts/Brandon_bld.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('../fonts/Brandon_blk.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
