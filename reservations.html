@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Bakery</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/reservation.css">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- JS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/reservation.js"></script>
+
+
+</head>
+  <body>
+
+    <section id="hero">
+        <div class="layer">
+            <nav class="clearfix transparent">
+                <a class="logo" href="#">Bakery</a>
+                <ul class="clearfix">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                </ul>
+                <a href="#" id="pull"></a>
+            </nav>
+
+            <div class="banner">
+                <!-- Banner Title -->
+                <h1 id="banner-title">Make a Reservation</h1>
+            </div
+        </div>
+    </section>
+    <section id="reserve-form">
+      <div class="section group">
+          <div class="col span_1_of_2">
+              <div class="col-content">
+                  <form>
+                    <div class="col">
+                        <div class="input-thing">
+                          <label for="name-input">Name</label>
+                        </div>
+
+                        <div class="input-boxes">
+                          <input class="u-full-width" type="name" placeholder="John Doe" id="name-input">
+                        </div>
+
+                        <div class="input-thing">
+                          <label for="exampleEmailInput">Email</label>
+                        </div>
+
+                          <div class="input-boxes">
+                            <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                          </div>
+                        </br>
+                        </br>
+                          <div class="input-thing">
+                            <label for="exampleRecipientInput">Date</label>
+                          </div>
+
+                          <div class="input-boxes">
+                              <input class="u-full-width" type="date" placeholder="mm/dd/yy" id="date-input">
+                          </div>
+
+                          <div class="input-thing">
+                            <label for="time-input">Time</label>
+                          </div>
+
+                          <div class="input-boxes">
+                            <input class="u-full-width" type="time" placeholder="hh:mm AM" id="time-input">
+                          </div>
+                        </br>
+                        </br>
+                          <div class="input-thing">
+                            <label for="exampleMessage">Order</label>
+                          </div>
+                  <div class="input-boxes">
+                    <textarea class="u-full-width" placeholder="I want a farm omelette." id="exampleMessage"></textarea>
+                    <label class="example-send-yourself-copy">
+                      <input type="checkbox">
+                      <span class="label-body">Send a copy to yourself</span>
+                    </label>
+                    <input class="button-primary" type="submit" value="Submit">
+                  </div>
+                  </form>
+                </div>
+                </div>
+
+
+
+
+              </div>
+
+              <div id="information">
+                <div class="col span_1_of_2">
+
+                  <h2>Hours</h2>
+                  <p>7 days a week</p>
+                  7:00AM to 5:00PM
+
+                  <h2>Email</h2>
+                  <a href="mailto:bakery@losaltoshacks.com">bakery@losaltoshacks.com</a>
+                </div>
+                <div class="col span_1_of_2">
+                  <h2>Phone number</h2>
+                  <p>123-456-7890</p>
+
+                  <h2>Address</h2>
+                  <p>201 Almond Avenue</p>
+                  <p>Los Altos, CA 94022</p>
+                </div>
+              </div>
+            </div>
+            </div>
+    </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+  <script>
+  $(function() {
+      var pull 	= $('#pull');
+      menu 		= $('nav ul');
+      menuHeight	= menu.height();
+
+      $(pull).on('click', function(e) {
+          e.preventDefault();
+          menu.slideToggle();
+      });
+
+      $(window).resize(function(){
+          var w = $(window).width();
+          if(w > 320 && menu.is(':hidden')) {
+              menu.removeAttr('style');
+          }
+      });
+  });
+  </script>
+
+</body>
+</html>
