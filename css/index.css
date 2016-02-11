@@ -267,10 +267,17 @@ nav a#pull {
 
 #reviews .review-panel .customer-info {
     padding: 2rem;
+
 }
 
 .customer-name {
     margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+.review-content {
+  font-size: 1.6rem;
+  padding: 0 2rem;
 }
 
 hr {
