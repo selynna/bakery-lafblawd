@@ -432,7 +432,12 @@ input[type="text"]{
   margin-top: 40px;
   font-size: 16px;
   float: left;
-  text-align: left:
+  text-align: left;
+}
+
+.hours-email {
+  margin-right: 300px;
+  width: 100%;
 }
 
 textarea{
