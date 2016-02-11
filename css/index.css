@@ -7,6 +7,12 @@ body {
     font-family: 'Brandon Grotesque', Arial, sans-serif;
 }
 
+/* colors */
+
+.lightred {
+    background-color: #FFE9E3;
+}
+
 .transparent {
     background-color: rgba(255, 255, 255, 0);
 }
@@ -142,7 +148,7 @@ nav a#pull {
     background-color: #9E9E9E;
 }
 .banner {
-    margin: 10% auto 0 auto;
+    margin: 8rem auto 0 auto;
     width: 85%;
     text-align: center;
     color: white;
@@ -172,8 +178,13 @@ nav a#pull {
 }
 
 #details h3 {
-    color: #C4BDBB;
+    color: #5E4B45;
     font-size: 1.6rem;
+}
+
+#details h4 {
+    color: #5E4B45;
+    font-size: 1.4rem;
 }
 
 /* Grid */
@@ -189,11 +200,11 @@ nav a#pull {
 .col {
 	display: block;
 	float:left;
-	margin: 1% 0 1% 1.6%;
+	margin: 0% 0 0% 0%;
     text-align: center;
 }
 .col-content {
-    margin: 4rem auto;
+    margin: 4rem 1rem;
 }
 .col:first-child { margin-left: 0; }
 
@@ -208,7 +219,7 @@ nav a#pull {
 	width: 100%;
 }
 .span_1_of_2 {
-	width: 49.2%;
+	width: 50%;
 }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
@@ -218,12 +229,62 @@ nav a#pull {
 		margin: 1% 0 1% 0%;
 	}
 }
-
 @media only screen and (max-width: 480px) {
 	.span_2_of_2, .span_1_of_2 { width: 100%; }
 }
 
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.66%; }
+.span_1_of_3 { width: 33.33%; }
+
+/*  GO FULL WIDTH BELOW 768 PIXELS */
+@media only screen and (max-width: 768px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
 #reviews {
-    height: 900px;
     background-color: #FFF5F2;
+    padding: 4rem;
+}
+
+#reviews .title {
+    text-align: center;
+    font-size: 2rem;
+    color: #5E4B45;
+}
+
+#reviews .review-panel {
+    height: 300px;
+    background-color: white;
+    border-radius: 8px;
+    margin: 1rem;
+    -webkit-box-shadow: 0px 1px 2px -1px rgba(158,158,158,1);
+    -moz-box-shadow: 0px 1px 2px -1px rgba(158,158,158,1);
+    box-shadow: 0px 1px 2px -1px rgba(158,158,158,1);
+}
+
+#reviews .review-panel .customer-info {
+    padding: 2rem;
+}
+
+.customer-name {
+    margin: 0 auto;
+}
+
+.customer-info hr {
+    border: none;
+    width: 40px;
+    height: 4px;
+    background-color: #E86565;
+    border-radius: 20px;
+}
+
+#reviews .review-panel .customer-picture {
+    width: 40px;
+    height: 40px;
+    border: 2px #EDEDED solid;
+    border-radius: 40px;
+    margin: 0 auto;
 }
