@@ -224,12 +224,12 @@ nav a#pull {
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
 	.col {
 		margin: 1% 0 1% 0%;
 	}
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
 	.span_2_of_2, .span_1_of_2 { width: 100%; }
 }
 
@@ -246,7 +246,7 @@ nav a#pull {
 
 #reviews {
     background-color: #FFF5F2;
-    padding: 4rem;
+    padding: 4rem 2rem;
 }
 
 #reviews .title {
@@ -273,7 +273,7 @@ nav a#pull {
     margin: 0 auto;
 }
 
-.customer-info hr {
+hr {
     border: none;
     width: 40px;
     height: 4px;
@@ -287,4 +287,48 @@ nav a#pull {
     border: 2px #EDEDED solid;
     border-radius: 40px;
     margin: 0 auto;
+}
+
+/* MENU */
+
+#menu {
+    background-color: white;
+    padding: 3rem 2rem;
+}
+
+#menu .title {
+    text-align: center;
+    font-size: 2rem;
+    color: #5E4B45;
+}
+
+.menu-wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+    width: 95%;
+}
+.menu-item {
+    -webkit-box-shadow: 0px 1px 2px -1px rgba(158,158,158,1);
+    -moz-box-shadow: 0px 1px 2px -1px rgba(158,158,158,1);
+    box-shadow: 0px 1px 2px -1px rgba(158,158,158,1);
+    border-radius: 8px;
+    background-color: #FAFAFA;
+    min-height: 400px;
+    margin: 2rem;
+}
+.menu-content {
+    padding: 2rem;
+}
+.meal-image {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+.recipe-description {
+}
+
+.menu-item:focus {
+    outline: none;
+}
+.slick-arrow {
 }
