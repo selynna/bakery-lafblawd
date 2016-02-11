@@ -293,7 +293,7 @@ hr {
 
 #menu {
     background-color: white;
-    padding: 3rem 2rem;
+    padding: 3rem 2rem 5rem 2rem;
 }
 
 #menu .title {
@@ -331,4 +331,19 @@ hr {
     outline: none;
 }
 .slick-arrow {
+}
+
+/* Contact */
+#contact {
+    padding: 3rem 2rem 7rem 2rem;
+    background-color: #E86565;
+}
+
+.contact-splash {
+    text-align: center;
+}
+
+.contact-splash h1 {
+    color: white;
+    font-size: 3rem;
 }
