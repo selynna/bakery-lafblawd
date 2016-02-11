@@ -266,7 +266,12 @@ nav a#pull {
 }
 
 #reviews .review-panel .customer-info {
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.review-content {
+    padding: 0 2rem;
+    font-size: 1.6rem;
 }
 
 .customer-name {
@@ -279,6 +284,7 @@ hr {
     height: 4px;
     background-color: #E86565;
     border-radius: 20px;
+    margin: 2rem auto;
 }
 
 #reviews .review-panel .customer-picture {
