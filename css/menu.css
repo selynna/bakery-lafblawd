@@ -1,0 +1,11 @@
+.banner {
+    height: 400px;
+    background: url("../images/menu.jpg") no-repeat lightgrey center;
+    background-size: cover;
+}
+
+#hero > .layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(160, 91, 83, .75);
+}
