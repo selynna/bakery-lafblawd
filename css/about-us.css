@@ -128,7 +128,7 @@ nav a#pull {
 #hero {
     background: url("../images/cupcakes.jpg") no-repeat lightgrey center;
     background-size: cover;
-    height: 700px;
+    height: 400px;
     position: relative;
 }
 
@@ -156,7 +156,7 @@ nav a#pull {
 
 .banner #banner-title {
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 3rem;
     margin: 0 auto;
 }
 
