@@ -1,5 +1,5 @@
-.banner {
-    height: 400px;
+#hero {
+    height: 450px;
     background: url("../images/menu.jpg") no-repeat lightgrey center;
     background-size: cover;
 }
@@ -7,5 +7,50 @@
 #hero > .layer {
     width: 100%;
     height: 100%;
-    background-color: rgba(160, 91, 83, .75);
+    background-color: rgba(52, 73, 94, .75);
+}
+nav li a:hover {
+    border-bottom: #A3DCFF solid 4px;
+}
+
+.menu-listings {
+    max-width: 768px;
+    width: 90%;
+    margin: 0 auto;
+}
+#breakfast {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: #34495e;
+}
+
+.menu-item {
+    margin-bottom: 3rem;
+}
+.menu-title {
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #34495e;
+}
+.menu-description {
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #34495e
+}
+
+#lunch {
+
+}
+
+#dinner {
+
+}
+
+#bakery {
+
 }
