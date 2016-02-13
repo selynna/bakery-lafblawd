@@ -22,7 +22,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/buttons.css">
-    <link rel="stylesheet" href="css/about-us.css">
+    <link rel="stylesheet" href="css/generic.css">
+    <link rel="stylesheet" href="css/menu.css">
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -31,12 +32,11 @@
     <!-- JS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script type="text/javascript" src="js/reservation.js"></script>
-
 
 </head>
-  <body>
-
+<body>
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <section id="hero">
         <div class="layer">
             <nav class="clearfix transparent">
@@ -51,26 +51,35 @@
 
             <div class="banner">
                 <!-- Banner Title -->
-                <h1 id="banner-title">About Us</h1>
+                <h1 id="banner-title">Our Loyalty Program</h1>
+                <!-- Subtitle -->
             </div>
         </div>
     </section>
+    <div class="menu-listings">
+        <section id="breakfast">
+            <h2>Breakfast</h2>
+            <div class="col span_1_of_2">
 
-    <section id="aboutus-description">
-      <div class="col span_1_of_2">
-        <div id="about-us-description">
-          <h1>Gluten-free and proud of it</h1>
-          <p>We are a bakery and restaurant that wishes to please anyone who walks through our door, especially those who prefer gluten-free or wheat-free food.</p>
-          <h1>Our Mission</h1>
-          <p>We strive to serve the members of the community who eat gluten- and wheat-free. We promise to only serve the most fresh, organic ingredients that we can get from local farms. Every time guests dine at our restaurant or order from our bakery, we want them to feel welcome.</p>
-          <h1>Our Head Chef</h1>
-          <p>Our head chef, Elizabeth Small, was trained at Le Cordon Bleu in Paris, France. After suffering a gluten allergy in her mid-twenties, she made it her life's work to develop a wholesome menu for people like her who also suffered gluten and wheat allergies. After years of perfection, she brought her talents here and is now the head chef in our kitchen. She also coordinates the bakery.</p> 
-        </div>
-      </div>
-      <div class="col span_1_of_2">
-        <img src="images/idk.jpg">
-      </div>
-    </section>
+                <h3 class="section-title">Earn Rewards</h3>
+                <p>Sign up and earn points!
+Sign up for our rewards program to earn point after each visit! Enter your email below and we'll send you instructions to sign up.</p>
+
+
+          <div class="input-loyalty">
+            Name* &nbsp; <input>
+            Email*&nbsp; <input>
+            </div>
+
+            <h3>Free Birthday Cake!</h3>
+            <p>Sign up for the rewards program and receive a free birthday cake on your special day! Who doesn't like free cake?</p>
+
+            <h3>Special promotions and events</h3>
+            <p>Want to be invited to the next bake-off? Sign up for the rewards program and we'll let you know when we're planning on hosting fun events. You'll also get coupons to bring in an redeem for things such as free food and merchandise!</p>
+          </diV>
+        </section>
+
+    </div>
 
     <footer>
     </br>
@@ -79,27 +88,29 @@
       &copy; 2016 LAHS Website Design Team
     </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!-- End Document
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <script>
-  $(function() {
-      var pull 	= $('#pull');
-      menu 		= $('nav ul');
-      menuHeight	= menu.height();
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>
+    $(function() {
+        var pull 	= $('#pull');
+        menu 		= $('nav ul');
+        menuHeight	= menu.height();
 
-      $(pull).on('click', function(e) {
-          e.preventDefault();
-          menu.slideToggle();
-      });
+        $(pull).on('click', function(e) {
+            e.preventDefault();
+            menu.slideToggle();
+        });
 
-      $(window).resize(function(){
-          var w = $(window).width();
-          if(w > 320 && menu.is(':hidden')) {
-              menu.removeAttr('style');
-          }
-      });
-  });
-  </script>
-
+        $(window).resize(function(){
+            var w = $(window).width();
+            if(w > 320 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+            }
+        });
+    });
+    </script>
 </body>
 </html>

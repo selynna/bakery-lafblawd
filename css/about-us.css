@@ -371,6 +371,7 @@ hr {
 
 #about-us-description {
   margin-left: 40px;
+  margin-right: 40px;
 }
 
 /* Contact */
@@ -386,4 +387,13 @@ hr {
 .contact-splash h1 {
     color: white;
     font-size: 3rem;
+}
+footer {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+img {
+  height: 500px;
+  margin-right: 200px;
 }

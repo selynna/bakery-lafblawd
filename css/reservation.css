@@ -462,3 +462,8 @@ input[type="submit"]{
   font-weight: bold;
   cursor: pointer;
 }
+
+footer {
+  text-align: center;
+  color: #FFFFFF;
+}
