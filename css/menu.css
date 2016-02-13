@@ -44,13 +44,16 @@ nav li a:hover {
 }
 
 #lunch {
-
+  padding: 3rem 2rem;
+  text-align: center;
 }
 
 #dinner {
-
+  padding: 3rem 2rem;
+  text-align: center;
 }
 
 #bakery {
-
+  padding: 3rem 2rem;
+  text-align: center;
 }
